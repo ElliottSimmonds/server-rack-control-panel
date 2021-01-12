@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import logo from './logo.svg';
+import React, { useEffect } from "react";
 import theme, { MuiTheme } from "./config/theme.js";
 import { ThemeProvider } from "styled-components";
 import { Switch, Route, useLocation, Redirect, useHistory } from "react-router-dom";
