@@ -39,6 +39,23 @@ const StlyedDrawer = styled(Drawer)` // hide popup drawer when permanent draw is
     }
 `
 
+const StyledLogoWrapper = styled.div`
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+`;
+
+const StyledLogo = styled.img`
+    margin-right: 20px;
+`;
+
+const StyledAppText = styled.h3`
+    margin: 0;
+    padding-bottom: 5px;
+    width: 130px;
+`;
+
 function Menu(props) {
     const { isAdmin, signOut } = props;
     const [menuOpen, setMenuOpen] = useState(false);
@@ -56,6 +73,10 @@ function Menu(props) {
 
     const list =
         <StyledDiv onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
+            <StyledLogoWrapper>
+                <StyledLogo src="logo.svg" alt="Telesoft Logo"></StyledLogo>
+                <StyledAppText>Server Rack Control Panel</StyledAppText>
+            </StyledLogoWrapper>
             <List>
                 <ListItem button key={"Dashboard"} component={Link} to="/">
                     <ListItemIcon><HomeIcon color="secondary"/></ListItemIcon>
