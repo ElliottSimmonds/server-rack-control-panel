@@ -36,10 +36,9 @@ function Dashboard(props) {
 
     const getAllSystems = async () => {
         const aSystems = await readSystems();
-        //console.log(aSystems);
         let systems = [];
-        
         aSystems.forEach(s => systems.push({...s.data(),...{id:s.id} }));
+        systems.sort((a, b) => a.name.localeCompare(b.name)); // sort systems by name
         setAllsystems(systems);
     }
     useEffect(() => {
