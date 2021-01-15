@@ -36,8 +36,8 @@ function UserForm(props) {
     const { onSubmit, serverError } = props;
 
     const userFormSchema = yup.object().shape({
-        email: yup.string().required("Enter an email"),
-        password: yup.string().min(5, 'Password must be 5 characters long')
+        email: yup.string().email('Enter a valid email').required("Enter an email"),
+        password: yup.string().min(5, 'Password must be 5 characters long').required('Enter a password')
     });
 
 	const { register, handleSubmit, errors } = useForm({ resolver: yupResolver(userFormSchema) });

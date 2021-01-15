@@ -38,7 +38,7 @@ function SystemForm(props) {
     let history = useHistory();
     const [foundSystem, setSystem] = useState({});
 
-    // add yum method to validate IP addresses
+    // add yup method to validate IP addresses
     function ipv4(message = 'Invalid IP address') {
         return this.matches(/(^(\d{1,3}\.){3}(\d{1,3})$)/, {
             message,
