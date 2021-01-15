@@ -8,6 +8,8 @@ It uses firebase for account control, data persistence and deployment.
 
 ## Setup
 
+To connect the application to your firebase project, update the file src/config/firebase.js with your project's configuration object.
+
 ### Requirements
 
 * Node.js
@@ -26,7 +28,7 @@ Start application, accessible from http://localhost:3000:
 
     npm run start
 
-Deploy application on firebase:
+Deploy application build on firebase:
 
     npm run deploy
 
