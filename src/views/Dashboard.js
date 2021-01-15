@@ -22,6 +22,7 @@ const StyledLabel = styled.div`
 `;
 
 const ViewWrapper = styled.div`
+    padding-bottom: 75px; // margin to prevent add system button covering content
     @media (min-width: 960px) {
         margin-left: 250px;
     }
@@ -35,7 +36,9 @@ function Dashboard(props) {
 
     const getAllSystems = async () => {
         const aSystems = await readSystems();
+        //console.log(aSystems);
         let systems = [];
+        
         aSystems.forEach(s => systems.push({...s.data(),...{id:s.id} }));
         setAllsystems(systems);
     }
@@ -61,9 +64,6 @@ function Dashboard(props) {
         setTimeout(() => {
             updateSystem(id,{status:'Restarting'}).then(getAllSystems());
         }, 500);
-        setTimeout(() => {
-            updateSystem(id,{status:'Off', lastShutdown: new Date()}).then(getAllSystems());
-        }, 2000);
         setTimeout(() => {
             updateSystem(id,{status:'On'}).then(getAllSystems());
         }, 4000);
