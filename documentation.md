@@ -12,9 +12,9 @@ Git Repo: https://github.com/ElliottSimmonds/server-rack-control-panel
 
 ## Introduction
 
-This project will act is continuation of the previous project, covering the final stages of the design thinking process. I will develop a fully functional single-page web application using the previously defined requirements to solve the identified issue.
+This project will act is continuation of the previous project, covering the final stages of the design thinking process. I will develop a fully functional single-page web application using the previously defined requirements to solve the identified issue. To do so, I will be using the React web framework, which is an open-source JavaScript library for front-end development, utilized by many successful companies such as Twitter, Facebook and Amazon.
 
-The application will be developed for use at my workplace of Telesoft Technologies, to improve our abilities to control and monitor the systems within the R&D department. This application will provide a comprehensive overview of the installed systems, along with a collection of useful information such as their system details, status, and a list of active users. To do so, I will be using the React web framework, which is an open-source JavaScript library for front-end development, utilized by many successful companies such as Twitter, Facebook and Amazon.
+The application will be developed for use at my workplace of Telesoft Technologies, to improve our abilities to control and monitor the systems within the R&D department. This application will provide a comprehensive overview of the installed systems, along with a collection of useful information such as their system details, status, and a list of active users.
 
 This document will explore my chosen development methodology, the choices I have made during development, along with the issues I have faced, and the steps taken in response. Finally, the developed application will be evaluated against the initial requirements and user feedback.  
 
