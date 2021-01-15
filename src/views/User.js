@@ -1,10 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PropTypes from 'prop-types';
 import styled from "styled-components";
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
-import { Link, useLocation } from "react-router-dom";
 import Tile from "../components/Tile";
 import ChangeEmailForm from "../components/ChangeEmailForm";
 import ChangePasswordForm from "../components/ChangePasswordForm";
@@ -37,16 +33,6 @@ const StyledDeleteButton = styled(Button)`
             background-color: ${({ theme }) => theme.colors.darkred};
         }
     }
-`;
-
-const StyledTextField = styled(TextField)`
-	&& {
-		width: 80%;
-		margin: 0 10% 0 10%;
-		.MuiInputBase-root {
-			background-color: white;
-		}
-	}
 `;
 
 const ViewWrapper = styled.div`
