@@ -25,7 +25,6 @@ import Hidden from '@material-ui/core/Hidden';
 import IndicatorLight from '@material-ui/icons/FiberManualRecord';
 import GroupIcon from '@material-ui/icons/Group';
 import DeleteIcon from '@material-ui/icons/Delete';
-import Divider from '@material-ui/core/Divider';
 
 const ParentDiv = styled.div`
     margin: 10px;
@@ -229,6 +228,10 @@ function SystemBlock(props) {
                                             <TableRow>
                                                     <TableCell align="right">Status</TableCell>
                                                     <TableCell align="left">{system.status}</TableCell>
+                                            </TableRow>
+                                            <TableRow>
+                                                    <TableCell align="right">IPMI IP</TableCell>
+                                                    <TableCell align="left">{system.ipmiIp}</TableCell>
                                             </TableRow>
                                             <TableRow>
                                                 <TableCell align="right">Active Users</TableCell>
