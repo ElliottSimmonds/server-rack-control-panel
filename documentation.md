@@ -66,7 +66,7 @@ Despite the setbacks, I believe my application has been successful in demonstrat
 
 Trello project: https://trello.com/b/MmzbmEEF/server-rack-control-panel
 
-![Screenshot of Trello board](/assets/trello.png)
+![Screenshot of Trello board](src/assets/trello.png)
 
 ### References
 
