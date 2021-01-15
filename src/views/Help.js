@@ -24,7 +24,7 @@ function Help() {
                         <h4>Dashboard</h4>
                         <StyledP>
                         Contains a list of servers on the network
-
+                        </StyledP>
                         <ul>
                             <li>Light indicators represent the power state of each system. Green for on, red for off and yellow for restarting.</li>
                             <li>Click systems to expand and display additional information and controls.</li>
@@ -32,8 +32,6 @@ function Help() {
                             <li>After entering the required details, the rest is automatically generated to simulate possible real world system information.</li>
                             <li>The details of existing systems can be edited by clicking the "edit" button within their expanded view.</li>
                         </ul>  
-
-                        </StyledP>
                         <h4>User Settings</h4>
                         <StyledP>
                         Change account details such as email and password. Account can also be deleted from here.
