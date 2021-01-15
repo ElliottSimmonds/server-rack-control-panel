@@ -30,6 +30,7 @@ function Uac(props) {
         const aUserEntries =  await readUserEntries();
         let userEntries = [];
         aUserEntries.forEach(u => userEntries.push({...u.data(),...{id:u.id}}));
+        userEntries.sort((a, b) => a.email.localeCompare(b.email)); // users by email
         setUserEntries(userEntries);
     }
     useEffect(() => {
