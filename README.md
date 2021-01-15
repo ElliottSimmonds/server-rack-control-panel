@@ -48,7 +48,7 @@ Contains a list of servers on the network
 * After entering the required details, the rest is automatically generated to simulate possible real world system information
 * The details of existing systems can be edited by clicking the "edit" button within their expanded view
 
-### Profile
+### User Settings
 
 Change account details such as email and password. Account can also be deleted from here.
 
