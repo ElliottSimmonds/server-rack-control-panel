@@ -15,7 +15,6 @@ const StyledTitle1 = styled.h2`
 
 const StyledTitle2 = styled.h1`
     width: calc(100% - 250px);
-    color: ${({ theme }) => theme.colors.darkblue};
     text-align: center;
     margin: 10px;
     margin-left:250px;

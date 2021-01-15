@@ -20,13 +20,11 @@ const StyledWrapper = styled.div`
 const StyledHeading = styled.h1`
     text-align: center;
     margin-top: 2%;
-    color: ${({ theme }) => theme.colors.darkblue};
 `;
 
 const StyledSubHeading = styled.h2`
     text-align: center;
     margin-top: 2%;
-    color: ${({ theme }) => theme.colors.darkblue};
 `;
 
 const StyledGrid = styled(Grid)`
